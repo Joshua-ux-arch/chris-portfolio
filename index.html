@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Torsu Christopher — Web Designer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+
+  <!-- ══════════════ CURSOR ══════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ══════════════ NAV ══════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">TC<span class="nav__logo-dot">.</span></div>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav__cta">Let's Talk</a>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero__noise"></div>
+
+    <div class="hero__left">
+      <div class="hero__eyebrow">
+        <span class="hero__dot"></span>
+        Open to work — Lagos, NG
+      </div>
+
+      <h1 class="hero__heading">
+        I design<br>
+        digital things<br>
+        <em>beautifully.</em>
+      </h1>
+
+      <div class="hero__meta">
+        <p class="hero__sub">
+          Torsu Christopher — Web Designer crafting interfaces that feel as good as they look. From concept to pixel-perfect delivery.
+        </p>
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--primary">See my work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-n">5<sup>+</sup></span>
+          <span class="hero__stat-l">Years</span>
+        </div>
+        <div class="hero__divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-n">40<sup>+</sup></span>
+          <span class="hero__stat-l">Projects</span>
+        </div>
+        <div class="hero__divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-n">30<sup>+</sup></span>
+          <span class="hero__stat-l">Clients</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <div class="hero__canvas">
+
+        <!-- Giant background letterform -->
+        <div class="hero__bg-letter" aria-hidden="true">W</div>
+
+        <!-- Rotated name strip -->
+        <div class="hero__name-strip" aria-hidden="true">
+          Torsu Christopher &nbsp;·&nbsp; Web Designer &nbsp;·&nbsp;
+          Torsu Christopher &nbsp;·&nbsp; Web Designer &nbsp;·&nbsp;
+        </div>
+
+        <!-- Central framed photo placeholder -->
+        <div class="hero__frame">
+          <div class="hero__frame-inner">
+            <div class="hero__frame-initials">TC</div>
+            <div class="hero__frame-grain"></div>
+          </div>
+          <div class="hero__frame-label">
+            <span class="hero__frame-num">001</span>
+            <span class="hero__frame-title">Web Designer</span>
+          </div>
+        </div>
+
+        <!-- Floating accent elements -->
+        <div class="hero__accent hero__accent--tl">
+          <span class="hero__accent-line"></span>
+          <span class="hero__accent-text">Lagos NG</span>
+        </div>
+
+        <div class="hero__accent hero__accent--br">
+          <span class="hero__accent-big">5+</span>
+          <span class="hero__accent-sub">years</span>
+        </div>
+
+        <div class="hero__accent hero__accent--tr">
+          <span class="hero__avail-dot"></span>
+          Available
+        </div>
+
+        <!-- Orange slash decoration -->
+        <div class="hero__slash" aria-hidden="true">/</div>
+
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════ MARQUEE ══════════════ -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span>Web Design</span><em>✦</em>
+      <span>UI/UX</span><em>✦</em>
+      <span>Brand Identity</span><em>✦</em>
+      <span>Prototyping</span><em>✦</em>
+      <span>Figma</span><em>✦</em>
+      <span>Webflow</span><em>✦</em>
+      <span>Motion</span><em>✦</em>
+      <span>Web Design</span><em>✦</em>
+      <span>UI/UX</span><em>✦</em>
+      <span>Brand Identity</span><em>✦</em>
+      <span>Prototyping</span><em>✦</em>
+      <span>Figma</span><em>✦</em>
+      <span>Webflow</span><em>✦</em>
+      <span>Motion</span><em>✦</em>
+    </div>
+  </div>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section class="about" id="about">
+    <div class="about__left">
+      <div class="about__portrait-block">
+        <div class="about__img">
+          <div class="about__img-letters">TC</div>
+          <div class="about__img-badge">
+            <span class="about__img-badge-n">5+</span>
+            <span class="about__img-badge-t">Years<br>Experience</span>
+          </div>
+        </div>
+        <div class="about__tools">
+          <span>Figma</span><span>Webflow</span><span>Adobe XD</span><span>After Effects</span><span>HTML & CSS</span><span>Framer</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__right">
+      <p class="about__label">— About</p>
+      <h2 class="about__heading">
+        Designing with<br>purpose, not<br><em>just pixels.</em>
+      </h2>
+      <p class="about__body">
+        I'm a web designer who believes great design is invisible — it just works, feels right, and moves people. For five years I've been helping startups and brands build digital products that balance beauty with function.
+      </p>
+      <p class="about__body">
+        Every project starts with listening. I work closely with clients to understand what they're truly after, then translate that into a visual story that resonates.
+      </p>
+
+      <div class="about__timeline">
+        <div class="tl-item">
+          <div class="tl-item__year">2023 – Now</div>
+          <div class="tl-item__body">
+            <div class="tl-item__role">Senior Web Designer</div>
+            <div class="tl-item__place">Freelance / Independent</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item__year">2021 – 2023</div>
+          <div class="tl-item__body">
+            <div class="tl-item__role">UI/UX Designer</div>
+            <div class="tl-item__place">Creative Agency, Lagos</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item__year">2019 – 2021</div>
+          <div class="tl-item__body">
+            <div class="tl-item__role">Junior Web Designer</div>
+            <div class="tl-item__place">Digital Studio</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn btn--primary" style="margin-top:2.5rem">Work with me</a>
+    </div>
+  </section>
+
+  <!-- ══════════════ SERVICES ══════════════ -->
+  <section class="services" id="services">
+    <div class="services__head">
+      <div class="services__head-left">
+        <p class="section-eyebrow">— Services</p>
+        <h2 class="section-title">What I bring<br>to the table</h2>
+      </div>
+      <div class="services__head-right">
+        <p class="services__intro">Six capabilities. One goal: digital experiences that work beautifully.</p>
+        <div class="services__tags-run">
+          <span>UI Design</span><span>Web</span><span>Branding</span>
+          <span>Webflow</span><span>Motion</span><span>Consulting</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="services__list">
+      <div class="svc">
+        <span class="svc__n">01</span>
+        <h3 class="svc__name">UI / UX Design</h3>
+        <p class="svc__desc">Wireframes to high-fidelity prototypes. Interfaces that guide users naturally and convert.</p>
+        <a href="#contact" class="svc__arrow">↗</a>
+      </div>
+      <div class="svc">
+        <span class="svc__n">02</span>
+        <h3 class="svc__name">Web Design</h3>
+        <p class="svc__desc">Responsive, pixel-perfect websites built to impress and engineered to perform.</p>
+        <a href="#contact" class="svc__arrow">↗</a>
+      </div>
+      <div class="svc">
+        <span class="svc__n">03</span>
+        <h3 class="svc__name">Brand Identity</h3>
+        <p class="svc__desc">Logos, palettes, typography and guidelines — a visual language your audience remembers.</p>
+        <a href="#contact" class="svc__arrow">↗</a>
+      </div>
+      <div class="svc">
+        <span class="svc__n">04</span>
+        <h3 class="svc__name">Webflow Development</h3>
+        <p class="svc__desc">Design brought to life in Webflow. No-code, fast, and fully responsive — design to deploy.</p>
+        <a href="#contact" class="svc__arrow">↗</a>
+      </div>
+      <div class="svc">
+        <span class="svc__n">05</span>
+        <h3 class="svc__name">Motion Design</h3>
+        <p class="svc__desc">Micro-interactions and animations that elevate your product and delight users.</p>
+        <a href="#contact" class="svc__arrow">↗</a>
+      </div>
+      <div class="svc">
+        <span class="svc__n">06</span>
+        <h3 class="svc__name">Design Consulting</h3>
+        <p class="svc__desc">UX audits, design reviews and strategy sessions. Sometimes a second eye changes everything.</p>
+        <a href="#contact" class="svc__arrow">↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ WORK ══════════════ -->
+  <section class="work" id="work">
+    <div class="work__head">
+      <div>
+        <p class="section-eyebrow section-eyebrow--light">— Work</p>
+        <h2 class="section-title section-title--light">Selected<br>projects</h2>
+      </div>
+      <div class="work__filters">
+        <button class="wf active" data-f="all">All</button>
+        <button class="wf" data-f="web">Web</button>
+        <button class="wf" data-f="brand">Brand</button>
+        <button class="wf" data-f="ui">UI/UX</button>
+      </div>
+    </div>
+
+    <div class="work__grid" id="workGrid">
+
+      <!-- PROJECT 1 -->
+      <article class="proj proj--large" data-cat="web ui" data-project="oasis">
+        <div class="proj__thumb proj__thumb--green">
+          <div class="proj__thumb-glyph">Oasis</div>
+          <div class="proj__thumb-grid"></div>
+        </div>
+        <div class="proj__info">
+          <div class="proj__tags"><span>Web Design</span><span>UI/UX</span></div>
+          <h3 class="proj__name">Oasis — Wellness Platform</h3>
+          <p class="proj__blurb">Calming, conversion-focused design for a Lagos wellness startup.</p>
+          <button class="proj__view" data-project="oasis">View Project ↗</button>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="proj" data-cat="ui" data-project="kora">
+        <div class="proj__thumb proj__thumb--rust">
+          <div class="proj__thumb-glyph">Kora</div>
+          <div class="proj__thumb-grid"></div>
+        </div>
+        <div class="proj__info">
+          <div class="proj__tags"><span>UI/UX</span></div>
+          <h3 class="proj__name">Kora — Finance App</h3>
+          <button class="proj__view" data-project="kora">View Project ↗</button>
+        </div>
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="proj" data-cat="brand" data-project="nakasi">
+        <div class="proj__thumb proj__thumb--sage">
+          <div class="proj__thumb-glyph">Nakasi</div>
+          <div class="proj__thumb-grid"></div>
+        </div>
+        <div class="proj__info">
+          <div class="proj__tags"><span>Branding</span></div>
+          <h3 class="proj__name">Nakasi — Fashion Brand</h3>
+          <button class="proj__view" data-project="nakasi">View Project ↗</button>
+        </div>
+      </article>
+
+      <!-- PROJECT 4 -->
+      <article class="proj" data-cat="web" data-project="ember">
+        <div class="proj__thumb proj__thumb--orange">
+          <div class="proj__thumb-glyph">Ember</div>
+          <div class="proj__thumb-grid"></div>
+        </div>
+        <div class="proj__info">
+          <div class="proj__tags"><span>Web Design</span></div>
+          <h3 class="proj__name">Ember — Restaurant Site</h3>
+          <button class="proj__view" data-project="ember">View Project ↗</button>
+        </div>
+      </article>
+
+      <!-- PROJECT 5 -->
+      <article class="proj" data-cat="brand web" data-project="volta">
+        <div class="proj__thumb proj__thumb--tan">
+          <div class="proj__thumb-glyph">Volta</div>
+          <div class="proj__thumb-grid"></div>
+        </div>
+        <div class="proj__info">
+          <div class="proj__tags"><span>Brand</span><span>Web</span></div>
+          <h3 class="proj__name">Volta — Energy Startup</h3>
+          <button class="proj__view" data-project="volta">View Project ↗</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════ PROJECT MODAL ══════════════ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal__close" id="modalClose">✕</button>
+      <div class="modal__inner" id="modalInner">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ TESTIMONIALS ══════════════ -->
+  <section class="testi" id="testimonials">
+    <p class="section-eyebrow">— Clients</p>
+    <h2 class="section-title">What people<br>actually say</h2>
+
+    <div class="testi__grid">
+      <div class="testi-card testi-card--dark">
+        <p class="testi-card__q">"</p>
+        <p class="testi-card__text">Torsu has an incredible eye for design. Our site went from outdated to stunning — conversion rate doubled in a month.</p>
+        <div class="testi-card__foot">
+          <div class="testi-card__av av--green">AM</div>
+          <div>
+            <div class="testi-card__name">Amara Mensah</div>
+            <div class="testi-card__role">CEO, Oasis Wellness</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-card__q">"</p>
+        <p class="testi-card__text">He understood our brand vision immediately. Delivered something that truly exceeded expectations. Will work with again.</p>
+        <div class="testi-card__foot">
+          <div class="testi-card__av av--orange">KO</div>
+          <div>
+            <div class="testi-card__name">Kofi Owusu</div>
+            <div class="testi-card__role">Founder, Kora Finance</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-card__q">"</p>
+        <p class="testi-card__text">The brand identity gave us a whole new level of confidence. Clean, modern, and unmistakably us.</p>
+        <div class="testi-card__foot">
+          <div class="testi-card__av av--rust">NB</div>
+          <div>
+            <div class="testi-card__name">Nadia Boateng</div>
+            <div class="testi-card__role">Creative Director, Nakasi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card testi-card--orange">
+        <p class="testi-card__q">"</p>
+        <p class="testi-card__text">Professional, communicative, incredibly talented. I'll be using him for every future project without hesitation.</p>
+        <div class="testi-card__foot">
+          <div class="testi-card__av av--cream">DK</div>
+          <div>
+            <div class="testi-card__name">David Kusi</div>
+            <div class="testi-card__role">Founder, Ember Restaurant</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact__left">
+      <p class="section-eyebrow section-eyebrow--light">— Contact</p>
+      <h2 class="contact__heading">Let's build<br>something<br><em>great.</em></h2>
+
+      <div class="contact__details">
+        <a href="mailto:hello@torsu.design" class="contact__detail-item">
+          <span class="contact__detail-icon">@</span>
+          <div>
+            <span class="contact__detail-label">Email</span>
+            <span class="contact__detail-val">hello@torsu.design</span>
+          </div>
+        </a>
+        <a href="https://wa.me/2348132003769" target="_blank" class="contact__detail-item">
+          <span class="contact__detail-icon">✆</span>
+          <div>
+            <span class="contact__detail-label">WhatsApp</span>
+            <span class="contact__detail-val">+234 813 200 3769</span>
+          </div>
+        </a>
+        <div class="contact__detail-item">
+          <span class="contact__detail-icon">◉</span>
+          <div>
+            <span class="contact__detail-label">Location</span>
+            <span class="contact__detail-val">Lagos, Nigeria</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__socials">
+        <a href="#" class="csoc" title="Twitter">Tw</a>
+        <a href="#" class="csoc" title="LinkedIn">Li</a>
+        <a href="#" class="csoc" title="Dribbble">Dr</a>
+        <a href="#" class="csoc" title="Behance">Be</a>
+      </div>
+    </div>
+
+    <div class="contact__right">
+      <form class="cform" id="contactForm" novalidate>
+
+        <!-- Web3Forms access key — get yours FREE at web3forms.com -->
+        <input type="hidden" name="access_key" value="bd16c367-6280-4566-8083-e343d006d7d0" />
+        <input type="hidden" name="subject" value="New Project Inquiry — Torsu Christopher Portfolio" />
+        <input type="hidden" name="from_name" value="Torsu Portfolio" />
+        <input type="checkbox" name="botcheck" style="display:none" />
+
+        <div class="cform__field">
+          <input class="cform__input" id="cf_name" name="name" type="text" placeholder=" " required />
+          <label class="cform__label" for="cf_name">Full Name</label>
+        </div>
+
+        <div class="cform__row">
+          <div class="cform__field">
+            <input class="cform__input" id="cf_email" name="email" type="email" placeholder=" " required />
+            <label class="cform__label" for="cf_email">Email Address</label>
+          </div>
+          <div class="cform__field">
+            <input class="cform__input" id="cf_phone" name="phone" type="tel" placeholder=" " />
+            <label class="cform__label" for="cf_phone">Phone (optional)</label>
+          </div>
+        </div>
+
+        <div class="cform__field">
+          <select class="cform__input cform__select" id="cf_service" name="service" required>
+            <option value="" disabled selected></option>
+            <option>UI/UX Design</option>
+            <option>Web Design</option>
+            <option>Brand Identity</option>
+            <option>Webflow Development</option>
+            <option>Motion Design</option>
+            <option>Design Consulting</option>
+          </select>
+          <label class="cform__label cform__label--sel" for="cf_service">Service Needed</label>
+        </div>
+
+        <div class="cform__field">
+          <select class="cform__input cform__select" id="cf_budget" name="budget">
+            <option value="" disabled selected></option>
+            <option>Under $500</option>
+            <option>$500 – $1,500</option>
+            <option>$1,500 – $5,000</option>
+            <option>$5,000+</option>
+          </select>
+          <label class="cform__label cform__label--sel" for="cf_budget">Budget Range</label>
+        </div>
+
+        <div class="cform__field">
+          <textarea class="cform__input cform__textarea" id="cf_msg" name="message" placeholder=" " required></textarea>
+          <label class="cform__label" for="cf_msg">Tell me about your project</label>
+        </div>
+
+        <div class="cform__actions">
+          <button type="submit" class="btn btn--send" id="sendBtn">
+            <span class="btn__text">Send Message</span>
+            <span class="btn__icon">↗</span>
+          </button>
+          <a href="https://wa.me/2348132003769?text=Hi%20Torsu%2C%20I%20saw%20your%20portfolio%20and%20I'd%20like%20to%20discuss%20a%20project."
+             target="_blank" class="btn btn--wa" id="waBtn">
+            <span class="btn__text">WhatsApp Me</span>
+            <span class="btn__icon">✆</span>
+          </a>
+        </div>
+
+        <div class="cform__status" id="formStatus"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="footer__left">
+      <span class="footer__logo">TC<span>.</span></span>
+      <span class="footer__copy">© 2026 Torsu Christopher</span>
+    </div>
+    <div class="footer__right">
+      <a href="#home">Top ↑</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
