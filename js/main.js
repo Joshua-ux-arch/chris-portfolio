@@ -455,17 +455,8 @@ function initContactForm() {
     setSending(true);
 
     if (!key || key === 'YOUR_WEB3FORMS_KEY') {
-      /* Fallback: open mail client */
-      await delay(700);
-      const phone   = document.getElementById('cf_phone').value.trim();
-      const budget  = document.getElementById('cf_budget').value;
-      const subject = encodeURIComponent(`Project Inquiry — ${service}`);
-      const body    = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\nService: ${service}\nBudget: ${budget || 'N/A'}\n\n${msg}`
-      );
-      window.location.href = `mailto:hello@torsu.design?subject=${subject}&body=${body}`;
-      onSuccess();
-      return;
+      setSending(false);
+      return showStatus('error', '⚠ Please add your Web3Forms access key to the form before sending.');
     }
 
     /* Web3Forms submission */
@@ -484,7 +475,7 @@ function initContactForm() {
       }
     } catch (err) {
       console.error('Web3Forms error:', err);
-      showStatus('error', '✗ Something went wrong. Please email hello@torsu.design directly or use WhatsApp.');
+      showStatus('error', '✗ Something went wrong. Please try again later or refresh the page.');
       setSending(false);
     }
   });
